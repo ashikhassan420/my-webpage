@@ -193,3 +193,17 @@ p{color:white;
   margin:10px;
   
 }
+/*marquee*/
+@media(max-width:768px){
+
+				.r img{
+  height: 170px;
+  width:120px;
+  border: 5px solid #FE8201;
+  margin-right:5px;
+}
+.menu ul li{
+    display: inline-block;
+    margin-left:0;
+}
+}
