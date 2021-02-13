@@ -10,6 +10,7 @@ padding: 0;
 }
 .menu ul li{
     display: inline-block;
+margin-left :50px;
 }
 .menu ul li a{
     color: white;
@@ -150,9 +151,11 @@ p{color:white;
   margin-top: -40px;
 }
 .r img{
-  height: 190px;
-  width:130px;
+  height: 500px;
+  width:300px;
   border: 5px solid #FE8201;
+float:right;
+margin-right:20px;
 }
 .box{
   width:80%;
