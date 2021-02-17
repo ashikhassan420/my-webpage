@@ -1,140 +1,108 @@
+
 *{margin: 0;
-padding: 0;  
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
-.menu{
-    background: #042331;
-  border-bottom:10px solid #FE8201;
-  font-size :35px;
-  padding:10px;
+.side{
+  position:fixed;
+  left:-500px;
+  width:500px;
+  height: 40%;
+  background: #042331;
+  transition:all 0.5s ease;
 }
-.menu ul{
-    text-align: center;
-}
-.menu ul li{
-    display: inline-block;
-    margin-left :50px;
-}
-.menu ul li a{
-    color: white;
-    padding: 2px 9px;
-  display: block;
-  text-decoration-line: none;
-}
-
-/*down*/
-.menu ul li{
-    position: relative;
-}
-.menu ul li ul{
-    position: absolute;
-    left: 0;
-    top: 100%;
-    background-color: blue;
-  font-size: 12px;
-    transition: .4s;
-    width: 100%;
-    font-size :13px;
-
-}
-.menu ul li ul li{
-    display:block;
-    margin-left: 0;
-}
-.menu ul li ul li a{
-    display:block;
-    border-top: 1px solid white;
-}
-
-.menu ul ul li:first-child a{
-  border-left:none;
-}
-
-/*hover part*/
-
-.menu ul li ul{
-  opacity: 0;
-  visibility: hidden;
-  transform: scaleY(0);
-  transform-origin:top center;
-}
-.menu ul li:hover ul{
-    transform: scale(1);
-    opacity: 1;
-    visibility: visible;
-}
-.menu ul li:hover > a{
-    background-color: blue;
-}
-
-/*button*/
-.button{
-  height:400px;
-  width:100%;
-  background-image: url(baner.jpg);
-  background-size:cover;
-  background-position:center;
-  background-repeat:no-repeat;
-  border-bottom: 12px solid #FE8201;
-}
-h2{color:white;
-  margin-top: 100px;
+.side header{
+  color:white;
   text-align: center;
+  line-height: 110px;
+  background: #063146;
+  font-size :50px;
+  user-select:none;
+}
+.side ul a{
+  height:100%;
+  width:100%;
+  display: block;
+  line-height: 100px;
+  font-size: 40px;
+  color:white;
+  padding-left:150px;
+  box-sizing: border-box;
+  border-top:3px solid rgba(255,255,255,.1);
+  border-bottom: 3px solid black;
+  transition:6s;
+}
+ul li:hover a{
+  padding-left: 10px;
+  background-color: skyblue;
+}
+.side ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;}
+  label #btn{
+  position:absolute;
+  cursor: pointer;
   background: black;
+  border-radius: 3px;
   font-size :40px;
 }
-p{color:black;
-  text-align: center;
-  margin-top: 10px;
-  font-size :35px;
+label #btn{
+  z-index: 1111;
+  left:10px;
+  top:20px;
+  color:white;
+  padding: 15px 30px;
+  opacity: 1;
+  border: 2px solid white;
 }
-.click-class2{
-    background:#042331;
-    padding: 10px 20px;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
-  margin-top: 7px;
-  margin-left: 7px;
-  border: 1px solid white;
+#check:checked~.side{left:0;}
+#check:~section{margin-left: 100px;}
+.section{height: 500px;
+  width:100%;
 }
-.click-class2::before{
-    content: "";
-    height: 100%;
-    width: 0;
-    position: absolute;
-    top: 0;
-    left:0;
-    background: red;
-    z-index: -1;
-    transition: 0.5s;
+.section{
+  background-image: url(type.jpeg);
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align :center;
 }
-.click-class2:hover::before{
-    width: 100%;
+h5{margin-top :180px;
+font-size :40px;
+color:white;
+background :black;
+margin-left:170px;
+margin-right :170px;
+padding:10px 0;
 }
-.click3{
-    background:#042331;
-    padding: 4px 9px;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    position: relative;
-    z-index: 1;
+.btn1{float:left;
+padding :20px 15px;
+background:black;
+width:20%;
+margin-top :70px;
+margin-left :230px;
+text-align :center;
+border:3px solid white;
+border-radius:10px;
 }
-.click3::before{
-    content: "";
-    height: 100%;
-    width: 0;
-    position: absolute;
-    top: 0;
-    left:0;
-    background: red;
-    z-index: -1;
-    transition: 0.5s;
+.btn2{float:left;
+padding :19px 14px;
+background:black;
+width:20%;
+margin-top :70px;
+margin-left :50px;
+text-align :center;
+border:3px solid white;
+border-radius:10px;
 }
-.click3:hover::before{
-    width: 100%;
+.btn1 a{color:#fff;
+font-size :31px;}
+.btn2 a{color:#fff;
+font-size :30px;
 }
 .g{
   height: 100%;
@@ -166,7 +134,7 @@ box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
   margin-right: 30px;
 }
 .f i{margin-top:80px;
-background :#13ACD4;
+background :black;
 color:white;
 text-align :center;
 padding: 15px 100px;
@@ -185,7 +153,6 @@ box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
 }
 .r{float: right;
   width:40%;
-  margin-top: -90px;
 }
 .meg{margin:40px;
 }
