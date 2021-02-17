@@ -58,7 +58,7 @@ width: 100%;
 h2{margin: 0;
   padding: 0;
   position:absolute;
-  top:130%;
+  top:100%;
   transform: translateY(-50%);
   width:100%;
   text-align:center;
