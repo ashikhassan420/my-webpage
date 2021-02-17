@@ -37,14 +37,15 @@ height:325px;
 }
 p{font-size :25px;}
 footer{
-  padding:25px;
-  margin-top:60px;
-  color:white;
-  background-color:#45424A;
+  padding:8px;
+  margin-top:90px;
+  color:#ffffff;
+  background-color:#e8491d;
   text-align: center;
-  font-size :32px;
+  font-size :25px;
 }
-h4{text-shadow: 5px 15px 10px black;
+h4{text-shadow: 2px 8px 5px black;}
+}
 letter-spacing:3px;
 }
 
